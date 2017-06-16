@@ -12,6 +12,8 @@ sudo npm install -g ethereumjs-testrpc
 
 #### Common command
 
+Start `geth` first, for deploy contracts
+
 ```
 -- start a project
 truffle init
@@ -23,4 +25,8 @@ truffle console
 truffle test
 ```
 
+#### Local settings
 
+```
+ETHEREUM_ADDRESS
+```

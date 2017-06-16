@@ -15,7 +15,7 @@ fs.readFile('./build/contracts/Test.json', 'utf8', (err, data) => {
   //UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 3): Error: invalid address
   //务必设置为自己的钱包地址，如果不知道，查看自己的客户端启动时，观察打印到控制台的地址
   Test.defaults({
-    from : "0x2707318718f1c69ff55f5192cec64e117fdbbfde"
+    from : process.env.ETHEREUM_ADDRESS
   });
 
   var instance;
